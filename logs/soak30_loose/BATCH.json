@@ -1,0 +1,15 @@
+{
+ "batch_id": "soak30-texassolver-v0.2.0",
+ "bytes_compressed": 1588032,
+ "bytes_files": 7539452,
+ "bytes_tar": 7895040,
+ "compression": "xz preset 9 extreme (python lzma)",
+ "created_at_utc": "2026-11-18T06:12:47Z",
+ "destination": null,
+ "destination_verified": false,
+ "files": 30,
+ "manifest_sha256": "6a0763d0dcf75cc7eb8f6579b902cebacd6f0a7c55752b6ef3d882091eb4cd27",
+ "mean_bytes_compressed_per_spot": 52934.4,
+ "mean_bytes_files_per_spot": 251315.1,
+ "ratio_files_over_compressed": 4.748
+}
