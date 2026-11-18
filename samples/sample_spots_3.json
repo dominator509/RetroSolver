@@ -1,0 +1,50 @@
+{
+  "schema": "retrosolver.spot_list.v1",
+  "list_id": "sample-3-dryrun",
+  "notes": "SAMPLE INPUT FOR THE GENERATOR DRY RUN ONLY. Ranges are short placeholder hand lists, not curated RetroSolver ranges. Inputs only; this file holds no strategy output.",
+  "solver": {"name": "TexasSolver", "version": "v0.2.0"},
+  "defaults": {"thread_num": 8, "max_iteration": 200, "print_interval": 10, "use_isomorphism": 1, "dump_rounds": 1, "allin_threshold": 0.67},
+  "spots": [
+    {
+      "spot_id": "sample-flop-btn-bb-qsjh2h",
+      "positions": {"ip": "BTN", "oop": "BB"},
+      "pot": 5.5,
+      "effective_stack": 97.5,
+      "board": "Qs,Jh,2h",
+      "ranges": {"ip": "AA,KK,QQ,JJ,TT,AKs,AQs,KQs,QJs,JTs,T9s,98s", "oop": "TT,99,88,77,AQo,AJs,KJs,QTs,JTs,T9s,98s,87s"},
+      "bet_sizes": {
+        "flop":  {"oop": {"bet": [33, 75], "raise": [60], "allin": true}, "ip": {"bet": [33, 75], "raise": [60], "allin": true}},
+        "turn":  {"oop": {"bet": [75], "raise": [60], "allin": true}, "ip": {"bet": [75], "raise": [60], "allin": true}},
+        "river": {"oop": {"bet": [75], "raise": [60], "allin": true}, "ip": {"bet": [75], "raise": [60], "allin": true}}
+      },
+      "accuracy_target": 0.5
+    },
+    {
+      "spot_id": "sample-turn-co-bb-kd7c3s8h",
+      "positions": {"ip": "CO", "oop": "BB"},
+      "pot": 12,
+      "effective_stack": 88,
+      "board": "Kd,7c,3s,8h",
+      "ranges": {"ip": "AA,KK,AKs,AKo,KQs,KJs,QQ,JJ,99,77", "oop": "KQo,KJo,KTs,K9s,88,77,66,98s,T9s,A7s"},
+      "bet_sizes": {
+        "turn":  {"oop": {"bet": [50], "donk": [33], "raise": [60], "allin": true}, "ip": {"bet": [50, 100], "raise": [60], "allin": true}},
+        "river": {"oop": {"bet": [75], "donk": [33], "raise": [60], "allin": true}, "ip": {"bet": [75], "raise": [60], "allin": true}}
+      },
+      "accuracy_target": 0.3,
+      "solver_settings": {"max_iteration": 300}
+    },
+    {
+      "spot_id": "sample-river-btn-bb-ah9d4c2s2d",
+      "positions": {"ip": "BTN", "oop": "BB"},
+      "pot": 20,
+      "effective_stack": 40,
+      "board": "Ah,9d,4c,2s,2d",
+      "ranges": {"ip": "AK,AQ,A9s,99,44,KQs,QJs,JTs", "oop": "AJ,AT,A5s,A4s,99,44,T9s,98s,K9s"},
+      "bet_sizes": {
+        "river": {"oop": {"bet": [50], "donk": [50], "raise": [60], "allin": true}, "ip": {"bet": [50, 125], "raise": [60], "allin": true}}
+      },
+      "accuracy_target": 0.25,
+      "solver_settings": {"dump_rounds": 1}
+    }
+  ]
+}
