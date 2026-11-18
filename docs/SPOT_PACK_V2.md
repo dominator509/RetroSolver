@@ -29,7 +29,7 @@ The `--allow-synthetic` option is intended for test data only. Do not use it to 
 | `spots` | The spots contained in the pack. |
 | `hash` | Hash metadata. The committed packs describe SHA-256 over RFC 8785 JCS canonical JSON. |
 | `pack_hash` | The pack's SHA-256 digest over the canonical JSON representation with the `pack_hash` field removed. It detects changes to the pack contents. |
-| `contains_synthetic_test_data` | The schema declares this field required with value `true`. See the important compatibility note below before relying on that rule. |
+| `contains_synthetic_test_data` | Optional. If present, the schema requires the value `true`; the verifier treats it as a synthetic-data marker. |
 
 ## Read a spot
 
@@ -86,6 +86,8 @@ Its convergence method is `exploitability`: `exploitability_pct_of_pot` is `0.48
 
 The committed donksolver preflop sample shows the other convergence kind: its `method` is `root_ev_standard_error`, its `worst_seat` is `BB`, and its `worst_seat_se_pct_of_pot` is `0.7355356127549643`. That percentage is a Monte Carlo standard-error figure, not an exploitability result or target-pass claim.
 
-## Important compatibility note
+## Schema and verifier note
 
-The current schema and committed sample/verifier behavior disagree about `contains_synthetic_test_data`: the schema constrains the field to the constant value `true` when present, but the field is not in the schema's required list; neither committed sample includes it, and `verify_pack.py` accepts both samples without that field. The implementation treats a present `contains_synthetic_test_data: true` or a spot marked `synthetic_test_data: true` as synthetic and rejects it unless `--allow-synthetic` is used. The repository verifier does not run a JSON Schema validator, so a successful command does not establish that a file conforms to every schema constraint. Until these files are aligned, read the schema and the validator behavior together; do not interpret verifier success as proof of schema conformance or independent verification.
+`contains_synthetic_test_data` is not required by the schema. If present, its value must be `true`; omission is valid and is how both committed samples are structured. The repository validator treats a top-level `contains_synthetic_test_data: true` or a spot marked `synthetic_test_data: true` as synthetic and rejects the pack unless `--allow-synthetic` is used.
+
+`verify_pack.py` runs the repository's custom checks, not a JSON Schema validator. Its synthetic-data guard does not reject a top-level `contains_synthetic_test_data: false`, even though that value violates the schema's `const`. A successful command is therefore not proof of full schema conformance or independent verification.
