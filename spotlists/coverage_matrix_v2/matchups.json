@@ -1,0 +1,370 @@
+{
+ "hj_seat_mapping": "The bundled 6-max tree uses MP for the seat between UTG and CO. Brief matchups named HJ use those MP range files and record bundled_seat_map.",
+ "pot_and_stack": "pot = ip_committed + oop_committed + dead blinds (0.5 for a folded SB, 1.0 for a folded BB). effective_stack = 100 - the line's committed amount. 100bb start assumed.",
+ "matchups": [
+  {
+   "matchup_id": "srp-utg-bb",
+   "pot_type": "SRP",
+   "brief_name": "UTG-BB",
+   "positions": {
+    "ip": "UTG",
+    "oop": "BB"
+   },
+   "dir": "UTG/2.5bb/BB/Call",
+   "files": {
+    "ip": "UTG_range.txt",
+    "oop": "BB_range.txt"
+   },
+   "line": "UTG opens 2.5bb, HJ/CO/BTN/SB fold, BB calls",
+   "dead_blinds": [
+    "SB"
+   ],
+   "ip_committed": 2.5,
+   "oop_committed": 2.5,
+   "pot_100bb": 5.5,
+   "effective_stack_100bb": 97.5
+  },
+  {
+   "matchup_id": "srp-hj-bb",
+   "pot_type": "SRP",
+   "brief_name": "HJ-BB",
+   "positions": {
+    "ip": "HJ",
+    "oop": "BB"
+   },
+   "bundled_seat_map": {
+    "HJ": "MP"
+   },
+   "dir": "MP/2.5bb/BB/Call",
+   "files": {
+    "ip": "MP_range.txt",
+    "oop": "BB_range.txt"
+   },
+   "line": "HJ (bundled seat name MP) opens 2.5bb, CO/BTN/SB fold, BB calls",
+   "dead_blinds": [
+    "SB"
+   ],
+   "ip_committed": 2.5,
+   "oop_committed": 2.5,
+   "pot_100bb": 5.5,
+   "effective_stack_100bb": 97.5
+  },
+  {
+   "matchup_id": "srp-co-bb",
+   "pot_type": "SRP",
+   "brief_name": "CO-BB",
+   "positions": {
+    "ip": "CO",
+    "oop": "BB"
+   },
+   "dir": "CO/2.5bb/BB/Call",
+   "files": {
+    "ip": "CO_range.txt",
+    "oop": "BB_range.txt"
+   },
+   "line": "CO opens 2.5bb, BTN/SB fold, BB calls",
+   "dead_blinds": [
+    "SB"
+   ],
+   "ip_committed": 2.5,
+   "oop_committed": 2.5,
+   "pot_100bb": 5.5,
+   "effective_stack_100bb": 97.5
+  },
+  {
+   "matchup_id": "srp-btn-bb",
+   "pot_type": "SRP",
+   "brief_name": "BTN-BB",
+   "positions": {
+    "ip": "BTN",
+    "oop": "BB"
+   },
+   "dir": "BTN/2.5bb/BB/Call",
+   "files": {
+    "ip": "BTN_range.txt",
+    "oop": "BB_range.txt"
+   },
+   "line": "BTN opens 2.5bb, SB folds, BB calls",
+   "dead_blinds": [
+    "SB"
+   ],
+   "ip_committed": 2.5,
+   "oop_committed": 2.5,
+   "pot_100bb": 5.5,
+   "effective_stack_100bb": 97.5
+  },
+  {
+   "matchup_id": "srp-sb-bb",
+   "pot_type": "SRP",
+   "brief_name": "SB-BB",
+   "positions": {
+    "ip": "BB",
+    "oop": "SB"
+   },
+   "dir": "SB/3.0bb/BB/Call",
+   "files": {
+    "ip": "BB_range.txt",
+    "oop": "SB_range.txt"
+   },
+   "line": "SB opens 3bb, BB calls",
+   "dead_blinds": [],
+   "ip_committed": 3.0,
+   "oop_committed": 3.0,
+   "pot_100bb": 6.0,
+   "effective_stack_100bb": 97.0
+  },
+  {
+   "matchup_id": "srp-co-btn",
+   "pot_type": "SRP",
+   "brief_name": "CO-BTN",
+   "positions": {
+    "ip": "BTN",
+    "oop": "CO"
+   },
+   "dir": "CO/2.5bb/BTN/Call",
+   "files": {
+    "ip": "BTN_range.txt",
+    "oop": "CO_range.txt"
+   },
+   "line": "CO opens 2.5bb, BTN calls, SB/BB fold",
+   "dead_blinds": [
+    "SB",
+    "BB"
+   ],
+   "ip_committed": 2.5,
+   "oop_committed": 2.5,
+   "pot_100bb": 6.5,
+   "effective_stack_100bb": 97.5
+  },
+  {
+   "matchup_id": "srp-hj-btn",
+   "pot_type": "SRP",
+   "brief_name": "HJ-BTN",
+   "positions": {
+    "ip": "BTN",
+    "oop": "HJ"
+   },
+   "bundled_seat_map": {
+    "HJ": "MP"
+   },
+   "dir": "MP/2.5bb/BTN/Call",
+   "files": {
+    "ip": "BTN_range.txt",
+    "oop": "MP_range.txt"
+   },
+   "line": "HJ (bundled seat name MP) opens 2.5bb, BTN calls, CO/SB/BB fold",
+   "dead_blinds": [
+    "SB",
+    "BB"
+   ],
+   "ip_committed": 2.5,
+   "oop_committed": 2.5,
+   "pot_100bb": 6.5,
+   "effective_stack_100bb": 97.5
+  },
+  {
+   "matchup_id": "3bp-bb-btn",
+   "pot_type": "3BP",
+   "brief_name": "BB v BTN",
+   "positions": {
+    "ip": "BTN",
+    "oop": "BB"
+   },
+   "dir": "BTN/2.5bb/BB/11.0bb/BTN/Call",
+   "files": {
+    "ip": "BTN_range.txt",
+    "oop": "BB_range.txt"
+   },
+   "line": "BTN opens 2.5bb, SB folds, BB 3-bets to 11bb, BTN calls",
+   "dead_blinds": [
+    "SB"
+   ],
+   "ip_committed": 11.0,
+   "oop_committed": 11.0,
+   "pot_100bb": 22.5,
+   "effective_stack_100bb": 89.0
+  },
+  {
+   "matchup_id": "3bp-bb-co",
+   "pot_type": "3BP",
+   "brief_name": "BB v CO",
+   "positions": {
+    "ip": "CO",
+    "oop": "BB"
+   },
+   "dir": "CO/2.5bb/BB/11.0bb/CO/Call",
+   "files": {
+    "ip": "CO_range.txt",
+    "oop": "BB_range.txt"
+   },
+   "line": "CO opens 2.5bb, BTN/SB fold, BB 3-bets to 11bb, CO calls",
+   "dead_blinds": [
+    "SB"
+   ],
+   "ip_committed": 11.0,
+   "oop_committed": 11.0,
+   "pot_100bb": 22.5,
+   "effective_stack_100bb": 89.0
+  },
+  {
+   "matchup_id": "3bp-bb-utg",
+   "pot_type": "3BP",
+   "brief_name": "BB v UTG",
+   "positions": {
+    "ip": "UTG",
+    "oop": "BB"
+   },
+   "dir": "UTG/2.5bb/BB/11.0bb/UTG/Call",
+   "files": {
+    "ip": "UTG_range.txt",
+    "oop": "BB_range.txt"
+   },
+   "line": "UTG opens 2.5bb, HJ/CO/BTN/SB fold, BB 3-bets to 11bb, UTG calls",
+   "dead_blinds": [
+    "SB"
+   ],
+   "ip_committed": 11.0,
+   "oop_committed": 11.0,
+   "pot_100bb": 22.5,
+   "effective_stack_100bb": 89.0
+  },
+  {
+   "matchup_id": "3bp-sb-btn",
+   "pot_type": "3BP",
+   "brief_name": "SB v BTN",
+   "positions": {
+    "ip": "BTN",
+    "oop": "SB"
+   },
+   "dir": "BTN/2.5bb/SB/11.0bb/BTN/Call",
+   "files": {
+    "ip": "BTN_range.txt",
+    "oop": "SB_range.txt"
+   },
+   "line": "BTN opens 2.5bb, SB 3-bets to 11bb, BB folds, BTN calls",
+   "dead_blinds": [
+    "BB"
+   ],
+   "ip_committed": 11.0,
+   "oop_committed": 11.0,
+   "pot_100bb": 23.0,
+   "effective_stack_100bb": 89.0
+  },
+  {
+   "matchup_id": "3bp-btn-co",
+   "pot_type": "3BP",
+   "brief_name": "BTN(3b) v CO",
+   "positions": {
+    "ip": "BTN",
+    "oop": "CO"
+   },
+   "dir": "CO/2.5bb/BTN/8.5bb/CO/Call",
+   "files": {
+    "ip": "BTN_range.txt",
+    "oop": "CO_range.txt"
+   },
+   "line": "CO opens 2.5bb, BTN 3-bets to 8.5bb, SB/BB fold, CO calls",
+   "dead_blinds": [
+    "SB",
+    "BB"
+   ],
+   "ip_committed": 8.5,
+   "oop_committed": 8.5,
+   "pot_100bb": 18.5,
+   "effective_stack_100bb": 91.5
+  },
+  {
+   "matchup_id": "3bp-co-hj",
+   "pot_type": "3BP",
+   "brief_name": "CO(3b) v HJ",
+   "positions": {
+    "ip": "CO",
+    "oop": "HJ"
+   },
+   "bundled_seat_map": {
+    "HJ": "MP"
+   },
+   "dir": "MP/2.5bb/CO/8.5bb/MP/Call",
+   "files": {
+    "ip": "CO_range.txt",
+    "oop": "MP_range.txt"
+   },
+   "line": "HJ (bundled seat name MP) opens 2.5bb, CO 3-bets to 8.5bb, BTN/SB/BB fold, HJ calls",
+   "dead_blinds": [
+    "SB",
+    "BB"
+   ],
+   "ip_committed": 8.5,
+   "oop_committed": 8.5,
+   "pot_100bb": 18.5,
+   "effective_stack_100bb": 91.5
+  },
+  {
+   "matchup_id": "4bp-btn-bb",
+   "pot_type": "4BP",
+   "brief_name": "BTN v BB",
+   "positions": {
+    "ip": "BTN",
+    "oop": "BB"
+   },
+   "dir": "BTN/2.5bb/BB/11.0bb/BTN/24.0bb/BB/Call",
+   "files": {
+    "ip": "BTN_range.txt",
+    "oop": "BB_range.txt"
+   },
+   "line": "BTN opens 2.5bb, SB folds, BB 3-bets to 11bb, BTN 4-bets to 24bb, BB calls",
+   "dead_blinds": [
+    "SB"
+   ],
+   "ip_committed": 24.0,
+   "oop_committed": 24.0,
+   "pot_100bb": 48.5,
+   "effective_stack_100bb": 76.0
+  },
+  {
+   "matchup_id": "4bp-co-btn",
+   "pot_type": "4BP",
+   "brief_name": "CO v BTN",
+   "positions": {
+    "ip": "BTN",
+    "oop": "CO"
+   },
+   "dir": "CO/2.5bb/BTN/8.5bb/CO/22.0bb/BTN/Call",
+   "files": {
+    "ip": "BTN_range.txt",
+    "oop": "CO_range.txt"
+   },
+   "line": "CO opens 2.5bb, BTN 3-bets to 8.5bb, CO 4-bets to 22bb, SB/BB fold, BTN calls",
+   "dead_blinds": [
+    "SB",
+    "BB"
+   ],
+   "ip_committed": 22.0,
+   "oop_committed": 22.0,
+   "pot_100bb": 45.5,
+   "effective_stack_100bb": 78.0
+  },
+  {
+   "matchup_id": "4bp-utg-bb",
+   "pot_type": "4BP",
+   "brief_name": "UTG v BB",
+   "positions": {
+    "ip": "UTG",
+    "oop": "BB"
+   },
+   "dir": "UTG/2.5bb/BB/11.0bb/UTG/24.0bb/BB/Call",
+   "files": {
+    "ip": "UTG_range.txt",
+    "oop": "BB_range.txt"
+   },
+   "line": "UTG opens 2.5bb, HJ/CO/BTN/SB fold, BB 3-bets to 11bb, UTG 4-bets to 24bb, BB calls",
+   "dead_blinds": [
+    "SB"
+   ],
+   "ip_committed": 24.0,
+   "oop_committed": 24.0,
+   "pot_100bb": 48.5,
+   "effective_stack_100bb": 76.0
+  }
+ ]
+}

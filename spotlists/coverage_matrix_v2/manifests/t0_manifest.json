@@ -1,0 +1,586 @@
+{
+ "tier": "T0",
+ "definition": "The 72-spot v1 draft (6 pot families x 12 flops at 100bb), already queued. Source list: spotlists/spotlist_v1_draft.json.",
+ "n_spots": 72,
+ "status_totals": {
+  "configured": 72
+ },
+ "spots": [
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-a72r",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "a72r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-k83r",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "k83r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-qt5r",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "qt5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-j98r",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "j98r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-t62tt",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "t62tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-987tt",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "987tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-752r",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "752r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-kq4m",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "kq4m",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-883r",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "883r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-ak5r",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "ak5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-643r",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "643r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-btn-bb-100bb-qj2tt",
+   "matchup_id": "srp-btn-bb",
+   "depth_bb": 100,
+   "board_key": "qj2tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-a72r",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "a72r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-k83r",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "k83r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-qt5r",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "qt5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-j98r",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "j98r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-t62tt",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "t62tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-987tt",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "987tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-752r",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "752r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-kq4m",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "kq4m",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-883r",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "883r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-ak5r",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "ak5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-643r",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "643r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-co-bb-100bb-qj2tt",
+   "matchup_id": "srp-co-bb",
+   "depth_bb": 100,
+   "board_key": "qj2tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-a72r",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "a72r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-k83r",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "k83r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-qt5r",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "qt5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-j98r",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "j98r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-t62tt",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "t62tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-987tt",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "987tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-752r",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "752r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-kq4m",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "kq4m",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-883r",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "883r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-ak5r",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "ak5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-643r",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "643r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-srp-sb-bb-100bb-qj2tt",
+   "matchup_id": "srp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "qj2tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-a72r",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "a72r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-k83r",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "k83r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-qt5r",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "qt5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-j98r",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "j98r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-t62tt",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "t62tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-987tt",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "987tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-752r",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "752r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-kq4m",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "kq4m",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-883r",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "883r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-ak5r",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "ak5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-643r",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "643r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-btn-100bb-qj2tt",
+   "matchup_id": "3bp-bb-btn",
+   "depth_bb": 100,
+   "board_key": "qj2tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-a72r",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "a72r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-k83r",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "k83r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-qt5r",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "qt5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-j98r",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "j98r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-t62tt",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "t62tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-987tt",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "987tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-752r",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "752r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-kq4m",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "kq4m",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-883r",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "883r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-ak5r",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "ak5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-643r",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "643r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-bb-co-100bb-qj2tt",
+   "matchup_id": "3bp-bb-co",
+   "depth_bb": 100,
+   "board_key": "qj2tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-a72r",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "a72r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-k83r",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "k83r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-qt5r",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "qt5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-j98r",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "j98r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-t62tt",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "t62tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-987tt",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "987tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-752r",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "752r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-kq4m",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "kq4m",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-883r",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "883r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-ak5r",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "ak5r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-643r",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "643r",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  },
+  {
+   "spot_id": "v1-3bp-sb-bb-100bb-qj2tt",
+   "matchup_id": "3bp-sb-bb",
+   "depth_bb": 100,
+   "board_key": "qj2tt",
+   "status": "configured",
+   "source_list": "spotlists/spotlist_v1_draft.json"
+  }
+ ]
+}

@@ -13,8 +13,12 @@
   - accuracy 0.5% of pot, max 300 iterations
   - A richer tree (flop 33/75 plus raise 60, turn and river 50/100 plus raise 60, all-in) was OOM-killed on the 15 GB box with full ranges.
 
-Open questions for Instinct and the owner:
+Open questions:
 1. The bundled ranges don't state their stack depth. 100bb is assumed and needs confirming.
 2. The card asks for 2-3 stack depths, but only one depth has sourced ranges. Other depths need a range source, and I won't invent ranges.
 3. "Standard rake" can't be expressed: the TexasSolver CLI has no rake setting. wasm-postflop supports `rake_rate` and `rake_cap`.
 4. The flop subset and the tree sizes are curation choices and need review.
+
+## Coverage matrix v2
+
+See `coverage_matrix_v2/` for the 16 matchup x 3 depth x 16 texture-class grid, tier manifests (T0-T3), the board ledger, and 100bb spot lists for T1 and T3. T0 is this v1 72-spot list. 40bb and 200bb cells are marked NO_RANGE because the bundled files do not state a depth.
