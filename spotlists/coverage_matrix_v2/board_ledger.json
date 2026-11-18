@@ -1,0 +1,299 @@
+{
+ "card_order": "ranks 2-A, suits cdhs, then itertools.combinations of the 52 cards in that order; boards are written high-rank-first, suit ascending within a rank",
+ "v1_reuse_rule": "If a v1 draft board satisfies the class definition and is not already used, it is the canonical board for that class.",
+ "lex_first_rule": "Otherwise the first flop in the card order that satisfies the class and is not already used.",
+ "canonical_boards": [
+  {
+   "class": "A-high dry",
+   "key": "a72r",
+   "board": "Ah,7c,2d",
+   "tier_group": "T1_T2"
+  },
+  {
+   "class": "K-high dry",
+   "key": "k83r",
+   "board": "Kd,8s,3h",
+   "tier_group": "T1_T2"
+  },
+  {
+   "class": "Q/J-high dry",
+   "key": "qt5r",
+   "board": "Qh,Tc,5d",
+   "tier_group": "T1_T2"
+  },
+  {
+   "class": "mid dry",
+   "key": "832r",
+   "board": "8h,3d,2c",
+   "tier_group": "T1_T2"
+  },
+  {
+   "class": "low dry",
+   "key": "752r",
+   "board": "7s,5d,2c",
+   "tier_group": "T1_T2"
+  },
+  {
+   "class": "paired high",
+   "key": "tt2tt",
+   "board": "Tc,Td,2c",
+   "tier_group": "T1_T2"
+  },
+  {
+   "class": "paired low",
+   "key": "883r",
+   "board": "8d,8c,3h",
+   "tier_group": "T1_T2"
+  },
+  {
+   "class": "monotone high",
+   "key": "kq4m",
+   "board": "Ks,Qs,4s",
+   "tier_group": "T1_T2"
+  },
+  {
+   "class": "monotone low",
+   "key": "432m",
+   "board": "4c,3c,2c",
+   "tier_group": "T3"
+  },
+  {
+   "class": "two-tone A/K high",
+   "key": "k32tt",
+   "board": "Kd,3c,2c",
+   "tier_group": "T3"
+  },
+  {
+   "class": "two-tone broadway",
+   "key": "qj2tt",
+   "board": "Qd,Jd,2c",
+   "tier_group": "T3"
+  },
+  {
+   "class": "two-tone connected mid",
+   "key": "987tt",
+   "board": "9h,8h,7c",
+   "tier_group": "T3"
+  },
+  {
+   "class": "rainbow connected mid",
+   "key": "j98r",
+   "board": "Jd,9c,8h",
+   "tier_group": "T3"
+  },
+  {
+   "class": "rainbow connected low",
+   "key": "643r",
+   "board": "6h,4d,3c",
+   "tier_group": "T3"
+  },
+  {
+   "class": "A-low wet",
+   "key": "a32tt",
+   "board": "Ad,3c,2c",
+   "tier_group": "T3"
+  },
+  {
+   "class": "trips-board",
+   "key": "222t",
+   "board": "2c,2d,2h",
+   "tier_group": "T3"
+  }
+ ],
+ "entries": [
+  {
+   "class": "A-high dry",
+   "board": "Ah,7c,2d",
+   "key": "a72r",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "K-high dry",
+   "board": "Kd,8s,3h",
+   "key": "k83r",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "Q/J-high dry",
+   "board": "Qh,Tc,5d",
+   "key": "qt5r",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "mid dry",
+   "board": "8h,3d,2c",
+   "key": "832r",
+   "source": "lex_first",
+   "why": "No unused v1 board satisfies the class definition. This is the first flop, in combinations of cards ordered 2c,2d,2h,2s,...,As, that satisfies the class and is not already a canonical board."
+  },
+  {
+   "class": "low dry",
+   "board": "7s,5d,2c",
+   "key": "752r",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "paired high",
+   "board": "Tc,Td,2c",
+   "key": "tt2tt",
+   "source": "lex_first",
+   "why": "No unused v1 board satisfies the class definition. This is the first flop, in combinations of cards ordered 2c,2d,2h,2s,...,As, that satisfies the class and is not already a canonical board."
+  },
+  {
+   "class": "paired low",
+   "board": "8d,8c,3h",
+   "key": "883r",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "monotone high",
+   "board": "Ks,Qs,4s",
+   "key": "kq4m",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "monotone low",
+   "board": "4c,3c,2c",
+   "key": "432m",
+   "source": "lex_first",
+   "why": "No unused v1 board satisfies the class definition. This is the first flop, in combinations of cards ordered 2c,2d,2h,2s,...,As, that satisfies the class and is not already a canonical board."
+  },
+  {
+   "class": "two-tone A/K high",
+   "board": "Kd,3c,2c",
+   "key": "k32tt",
+   "source": "lex_first",
+   "why": "No unused v1 board satisfies the class definition. This is the first flop, in combinations of cards ordered 2c,2d,2h,2s,...,As, that satisfies the class and is not already a canonical board."
+  },
+  {
+   "class": "two-tone broadway",
+   "board": "Qd,Jd,2c",
+   "key": "qj2tt",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "two-tone connected mid",
+   "board": "9h,8h,7c",
+   "key": "987tt",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "rainbow connected mid",
+   "board": "Jd,9c,8h",
+   "key": "j98r",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "rainbow connected low",
+   "board": "6h,4d,3c",
+   "key": "643r",
+   "source": "v1_reuse",
+   "why": "This board is in the v1 12-flop draft and satisfies the class definition, so it is reused as the canonical board for continuity with T0."
+  },
+  {
+   "class": "A-low wet",
+   "board": "Ad,3c,2c",
+   "key": "a32tt",
+   "source": "lex_first",
+   "why": "No unused v1 board satisfies the class definition. This is the first flop, in combinations of cards ordered 2c,2d,2h,2s,...,As, that satisfies the class and is not already a canonical board."
+  },
+  {
+   "class": "trips-board",
+   "board": "2c,2d,2h",
+   "key": "222t",
+   "source": "lex_first",
+   "why": "No unused v1 board satisfies the class definition. This is the first flop, in combinations of cards ordered 2c,2d,2h,2s,...,As, that satisfies the class and is not already a canonical board."
+  }
+ ],
+ "v1_flop_class_hits": [
+  {
+   "v1_key": "a72r",
+   "board": "Ah,7c,2d",
+   "matching_classes": [
+    "A-high dry"
+   ]
+  },
+  {
+   "v1_key": "k83r",
+   "board": "Kd,8s,3h",
+   "matching_classes": [
+    "K-high dry"
+   ]
+  },
+  {
+   "v1_key": "qt5r",
+   "board": "Qh,Tc,5d",
+   "matching_classes": [
+    "Q/J-high dry"
+   ]
+  },
+  {
+   "v1_key": "j98r",
+   "board": "Jd,9c,8h",
+   "matching_classes": [
+    "rainbow connected mid"
+   ]
+  },
+  {
+   "v1_key": "t62tt",
+   "board": "Ts,6s,2d",
+   "matching_classes": []
+  },
+  {
+   "v1_key": "987tt",
+   "board": "9h,8h,7c",
+   "matching_classes": [
+    "two-tone connected mid"
+   ]
+  },
+  {
+   "v1_key": "752r",
+   "board": "7s,5d,2c",
+   "matching_classes": [
+    "low dry"
+   ]
+  },
+  {
+   "v1_key": "kq4m",
+   "board": "Ks,Qs,4s",
+   "matching_classes": [
+    "monotone high"
+   ]
+  },
+  {
+   "v1_key": "883r",
+   "board": "8d,8c,3h",
+   "matching_classes": [
+    "paired low"
+   ]
+  },
+  {
+   "v1_key": "ak5r",
+   "board": "As,Kd,5c",
+   "matching_classes": []
+  },
+  {
+   "v1_key": "643r",
+   "board": "6h,4d,3c",
+   "matching_classes": [
+    "rainbow connected low"
+   ]
+  },
+  {
+   "v1_key": "qj2tt",
+   "board": "Qd,Jd,2c",
+   "matching_classes": [
+    "two-tone broadway"
+   ]
+  }
+ ]
+}
