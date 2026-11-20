@@ -1,0 +1,16 @@
+{
+ "batch_id": "t0-slice1-texassolver-evs-corrected",
+ "bytes_compressed": 3342828,
+ "bytes_files": 13897622,
+ "bytes_tar": 14284800,
+ "compression": "xz preset 9 extreme",
+ "created_at_utc": "2026-11-20T23:30:14Z",
+ "destination": null,
+ "destination_verified": false,
+ "files": 30,
+ "manifest_sha256": "bb34060160700d3155195d8cc76723dee80f1a829de83c2a28b45e311722209a",
+ "mean_bytes_compressed_per_spot": 111427.6,
+ "mean_bytes_files_per_spot": 463254.1,
+ "provenance_note": "Corrected slice-1 set replacing the reverted PR #6 content. 6 packs re-solved on PC with the fixed build (fork PR #3); all 6 converged under the 0.5% exploitability target (btn-ak5r needed a 900-iteration re-run, 0.484%). 24 packs as-staged from slice 1 (unguarded build), original sha256s re-verified. Full set passed extract_pack_v2 + validator_v2 (ACCEPT, 0 failures, 0 warnings) on 2026-11-20. Packs remain single_source until the independent dual-run cross-check.",
+ "ratio_files_over_compressed": 4.157
+}
