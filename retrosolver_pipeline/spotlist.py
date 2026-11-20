@@ -172,7 +172,9 @@ def normalize_spot(raw, defaults, idx):
     if not isinstance(raw, dict):
         raise SpotListError("%s must be an object" % where)
     known = {"spot_id", "positions", "pot", "effective_stack", "board", "ranges",
-             "bet_sizes", "accuracy_target", "solver_settings", "notes"}
+             "bet_sizes", "accuracy_target", "solver_settings", "notes",
+             # coverage-matrix v2 informational fields (not used by the CLI template)
+             "depth_bb", "matchup_id", "texture_class"}
     extra = set(raw) - known
     if extra:
         raise SpotListError("%s: unknown fields %s" % (where, sorted(extra)))
@@ -369,6 +371,7 @@ def render_cli_script(spot):
         "set_max_iteration %d" % s["max_iteration"],
         "set_print_interval %d" % s["print_interval"],
         "set_use_isomorphism %d" % s["use_isomorphism"],
+        "set_dump_evs %d" % s.get("dump_evs", 1),
         "start_solve",
         "set_dump_rounds %d" % s["dump_rounds"],
         "dump_result %s" % SOLVER_OUTPUT_FILE,
