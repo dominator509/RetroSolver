@@ -1,0 +1,98 @@
+[
+ {
+  "class": "A-high dry",
+  "board": "Ah,6d,2c",
+  "key": "a62r",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "K-high dry",
+  "board": "Kh,3d,2c",
+  "key": "k32r",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "Q/J-high dry",
+  "board": "Jh,3d,2c",
+  "key": "j32r",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "mid dry",
+  "board": "9h,3d,2c",
+  "key": "932r",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "low dry",
+  "board": "7h,3d,2c",
+  "key": "732r",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "paired high",
+  "board": "Td,Th,2c",
+  "key": "tt2r",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "paired low",
+  "board": "3c,2c,2d",
+  "key": "322tt",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "monotone high",
+  "board": "Tc,3c,2c",
+  "key": "t32m",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "monotone low",
+  "board": "5c,3c,2c",
+  "key": "532m",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "two-tone A/K high",
+  "board": "Kc,3d,2c",
+  "key": "k32tt",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "two-tone broadway",
+  "board": "Jd,Tc,2c",
+  "key": "jt2tt",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "two-tone connected mid",
+  "board": "8d,5c,4c",
+  "key": "854tt",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "rainbow connected mid",
+  "board": "8h,5d,4c",
+  "key": "854r",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "rainbow connected low",
+  "board": "4h,3d,2c",
+  "key": "432r",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "A-low wet",
+  "board": "Ac,3d,2c",
+  "key": "a32tt",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ },
+ {
+  "class": "trips-board",
+  "board": "3c,3d,3h",
+  "key": "333t",
+  "rule": "lex_first_matching_class_excluding_suit_isomorphs_of_matrix_v2_canonical_and_v1_boards"
+ }
+]
