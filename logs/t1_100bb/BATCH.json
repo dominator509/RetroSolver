@@ -1,0 +1,16 @@
+{
+ "batch_id": "t1-100bb-texassolver-evs",
+ "bytes_compressed": 8797516,
+ "bytes_files": 39491396,
+ "bytes_tar": 41902080,
+ "compression": "xz preset 9 extreme",
+ "created_at_utc": "2026-11-21T09:21:02Z",
+ "destination": null,
+ "destination_verified": false,
+ "files": 128,
+ "manifest_sha256": "3bd0c76abdf13d54410904a08c7d201d7e3d2ca59d9356ae6a9ea0e020d24902",
+ "mean_bytes_compressed_per_spot": 68730.6,
+ "mean_bytes_files_per_spot": 308526.5,
+ "provenance_note": "Coverage matrix v2 tier 1: 128 spots (16 matchups x 8 textures, 100bb), solved on PC with the patched console_solver_evs build (fork PR #3). Full set passed extract_pack_v2 + validator_v2 (ACCEPT, 0 failures, 0 warnings) plus an independent EV-bounds sweep (worst |EV| 74.74, 4bp-btn-bb-883r) on 2026-11-21. Exit-code gate unavailable for this batch (run_all.bat template bug, fixed in #10); compensated with output-JSON, convergence (all <=0.5%), and stdout evs-collected gates. a72r spot recovered from an intermittent segfault and individually verified (0.442% converged, 750 EVs, max |EV| 38.9). Packs remain single_source until the independent dual-run cross-check.",
+ "ratio_files_over_compressed": 4.489
+}
