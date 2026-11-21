@@ -76,7 +76,7 @@ echo [run] %~1
 pushd "%D%"
 powershell -NoProfile -Command "(Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')" > run_started_at.txt
 "%SOLVER%" -i input.txt -r "%RES%" -m holdem > solve_stdout.log 2>&1
-echo %ERRORLEVEL%> solver_exit_code.txt
+echo %ERRORLEVEL% > solver_exit_code.txt
 powershell -NoProfile -Command "(Get-Date).ToUniversalTime().ToString('yyyy-MM-ddTHH:mm:ssZ')" > run_finished_at.txt
 popd
 echo [done] %~1
