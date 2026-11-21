@@ -1,0 +1,16 @@
+{
+ "batch_id": "t4-100bb-altboards-texassolver-evs",
+ "bytes_compressed": 17429416,
+ "bytes_files": 80302044,
+ "bytes_tar": 83517440,
+ "compression": "xz preset 6",
+ "created_at_utc": "2026-11-21T20:55:16Z",
+ "destination": null,
+ "destination_verified": false,
+ "files": 256,
+ "manifest_sha256": "ea279d648fa439c2576352245c9bb41c22c7b803c3f2ef83c7dcf361f0063c29",
+ "mean_bytes_compressed_per_spot": 68083.7,
+ "mean_bytes_files_per_spot": 313679.9,
+ "provenance_note": "Coverage matrix v2 tier 4 (alt-boards): 256 spots (16 matchups x 16 texture classes, second non-isomorphic board per class, 100bb), solved on PC with the patched console_solver_evs build (fork PR #3). All 256 spots carry real solver exit code 0. Full set passed extract_pack_v2 (input sha + exit code + convergence <=0.5% gates) + validator_v2 (ACCEPT, 0 failures, 0 warnings) plus an independent EV-bounds sweep over 1,540,730 EV values (worst |EV| 92.34, AsAc on srp-sb-bb-a62rb2) on 2026-11-21. Zero failed spots in the run. Packs remain single_source until the XC1 dual-run cross-check (queued, started 2026-11-21 ~12:40 PM PST).",
+ "ratio_files_over_compressed": 4.607
+}
