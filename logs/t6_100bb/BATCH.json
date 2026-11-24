@@ -1,0 +1,20 @@
+{
+ "batch_id": "t6-100bb-altboards-b4-texassolver-evs",
+ "bytes_compressed": 17368308,
+ "bytes_files": 79274496,
+ "bytes_tar": 82462720,
+ "compression": "xz preset 6",
+ "created_at_utc": "2026-11-24T06:14:07Z",
+ "destination": null,
+ "destination_verified": false,
+ "excluded_spots": [
+  "srp-co-btn-100bb-k52rb4",
+  "srp-hj-btn-100bb-k52rb4"
+ ],
+ "files": 254,
+ "manifest_sha256": "b019d0e51103bc1b84689a386c87d46b659964720bb6951a90be67d09e704d29",
+ "mean_bytes_compressed_per_spot": 68379.2,
+ "mean_bytes_files_per_spot": 312104.3,
+ "provenance_note": "Coverage matrix v2 tier 6 (board 4 of each texture class, 16 matchups x 16 classes, 100bb), solved on PC with the patched console_solver_evs build. 256 spots solved with real solver exit code 0 and passed extract_pack_v2 plus validator_v2 (ACCEPT, 0 failures, 0 warnings). An independent sweep of every EV value against |EV| <= pot + effective stack found two failing spots, which are excluded from this batch and not counted as verified: srp-co-btn-100bb-k52rb4 (15 values up to 333.5) and srp-hj-btn-100bb-k52rb4 (3 values up to 109.2), both against a bound of 104. The other 254 spots pass the sweep. Packs remain single_source until a cross-check solve.",
+ "ratio_files_over_compressed": 4.564
+}
