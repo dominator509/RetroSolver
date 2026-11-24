@@ -1,0 +1,17 @@
+{
+ "batch_id": "t7-100bb-altboards-b5-texassolver-evs",
+ "bytes_compressed": 16192580,
+ "bytes_files": 74665743,
+ "bytes_tar": 77701120,
+ "compression": "xz preset 6",
+ "created_at_utc": "2026-11-24T15:35:36Z",
+ "destination": null,
+ "destination_verified": false,
+ "excluded_spots": [],
+ "files": 240,
+ "manifest_sha256": "60210fa1e26a37f7a41dd00a2af479e0cb385634a4604fc7ca0f8a066f60df92",
+ "mean_bytes_compressed_per_spot": 67469.1,
+ "mean_bytes_files_per_spot": 311107.3,
+ "provenance_note": "Coverage matrix v2 tier 7 (board 5 of each texture class with remaining boards, 100bb), solved on PC with the patched console_solver_evs build. 240 spots solved with real solver exit code 0 and passed extract_pack_v2 plus validator_v2 (ACCEPT, 0 failures, 0 warnings). An independent sweep of every EV value against |EV| <= pot + effective stack found no failing spots. Packs remain single_source until a cross-check solve.",
+ "ratio_files_over_compressed": 4.611
+}
