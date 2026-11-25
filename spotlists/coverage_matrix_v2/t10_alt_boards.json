@@ -1,0 +1,77 @@
+[
+ {
+  "class": "A-high dry",
+  "board": "Ah,9d,3c",
+  "key": "a93r"
+ },
+ {
+  "class": "K-high dry",
+  "board": "Kh,9d,2c",
+  "key": "k92r"
+ },
+ {
+  "class": "Q/J-high dry",
+  "board": "Jh,6d,2c",
+  "key": "j62r"
+ },
+ {
+  "class": "mid dry",
+  "board": "9h,5d,2c",
+  "key": "952r"
+ },
+ {
+  "class": "paired high",
+  "board": "Kd,Kh,2c",
+  "key": "kk2r"
+ },
+ {
+  "class": "paired low",
+  "board": "6c,2c,2d",
+  "key": "622tt"
+ },
+ {
+  "class": "monotone high",
+  "board": "Jc,4c,2c",
+  "key": "j42m"
+ },
+ {
+  "class": "monotone low",
+  "board": "6c,4c,2c",
+  "key": "642m"
+ },
+ {
+  "class": "two-tone A/K high",
+  "board": "Kc,5d,2c",
+  "key": "k52tt"
+ },
+ {
+  "class": "two-tone broadway",
+  "board": "Qd,Jc,2c",
+  "key": "qj2tt"
+ },
+ {
+  "class": "two-tone connected mid",
+  "board": "8d,7c,4c",
+  "key": "874tt"
+ },
+ {
+  "class": "rainbow connected mid",
+  "board": "9h,7d,5c",
+  "key": "975r"
+ },
+ {
+  "class": "rainbow connected low",
+  "board": "5h,4d,3c",
+  "key": "543r"
+ },
+ {
+  "class": "A-low wet",
+  "board": "Ah,4d,2c",
+  "key": "a42r"
+ },
+ {
+  "class": "trips-board",
+  "board": "9c,9d,9h",
+  "key": "999t"
+ }
+]
