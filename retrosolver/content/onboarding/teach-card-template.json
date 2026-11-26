@@ -1,0 +1,54 @@
+{
+  "schema": "retrosolver.teach_card_template.v1",
+  "note": "Text templates only. Every {slot} is filled by the ENGINE from the verified spot record or from a fixed phrase set below. This file never supplies a number. A template with a numeric slot that is not listed in its lesson's numeric_slots_allowed_from_spot_record is invalid.",
+  "rules": [
+    "The teach card MUST be shown after any MISS or GLANCE. A skin may style it; a skin may not hide it (per #185 1).",
+    "Placeholder slots use {name}. A slot not defined in this file is a build error.",
+    "No slot may carry a frequency, an EV, or a bet size, except cost_to_call and pot_size in tc.l2, which come from the spot record.",
+    "Phrase-set slots must resolve to one of the enumerated strings below; the engine picks by grade, never by free text."
+  ],
+  "common_slots": {
+    "chosen_action": {"type": "enum", "source": "engine spot record", "description": "the action the learner picked, rendered as a word (fold/call/raise or skin verb)"},
+    "best_action": {"type": "enum", "source": "engine spot record", "description": "the best action for the spot"},
+    "grade": {"type": "enum", "values": ["HIT", "GLANCE", "MISS"], "source": "engine"},
+    "grade_reason": {"type": "phrase_set", "source": "this file", "set": ["it loses less than what you chose", "it keeps you in a spot that pays off more often", "it avoids paying off a stronger hand", "it takes the value your hand has earned"]}
+  },
+  "templates": {
+    "tc.l1": {
+      "lesson": "l1",
+      "slots_used": ["chosen_action", "best_action", "grade_reason", "hand_strength_phrase", "purpose_phrase", "purpose_explanation"],
+      "extra_phrase_sets": {
+        "hand_strength_phrase": {"values": ["looked strong enough to want a call", "looked weak enough that you would rather not be called", "was unclear, so the purpose of the action was what mattered"]},
+        "purpose_phrase": {"values": ["value", "a bluff"]},
+        "purpose_explanation": {"values": ["Value wants a call.", "A bluff wants a fold."]}
+      },
+      "text": "You chose {chosen_action}. The better choice was {best_action}.\n\nThat choice was better because {grade_reason}.\n\nIn this spot your hand {hand_strength_phrase}. The purpose of the better action here was {purpose_phrase} — {purpose_explanation}\n\nValue wants a call. A bluff wants a fold. Ask which one you are after before you act."
+    },
+    "tc.l2": {
+      "lesson": "l2",
+      "numeric_slots_used": ["cost_to_call", "pot_size"],
+      "numeric_slots_allowed_from_spot_record": ["cost_to_call", "pot_size"],
+      "slots_used": ["chosen_action", "best_action", "cost_to_call", "pot_size", "pot_odds_verdict_phrase"],
+      "numeric_slot_note": "cost_to_call and pot_size are registered as defined numeric slots here; they are the only numeric slots in the whole file and appear only in tc.l2.",
+      "extra_phrase_sets": {
+        "pot_odds_verdict_phrase": {"values": ["That price was small next to the pot, so staying had a strong case.", "That price was large next to the pot, so folding had a strong case.", "That price was close to the pot, so the better choice was the one with the smaller downside."]}
+      },
+      "text": "You chose {chosen_action}. The better choice was {best_action}.\n\nIt would have cost {cost_to_call} to stay, and the pot held {pot_size} before your decision. So you were paying {cost_to_call} to try to win {pot_size}.\n\n{pot_odds_verdict_phrase}\n\nYou do not need a formula. Ask: is this price small next to this pot?"
+    },
+    "tc.l3": {
+      "lesson": "l3",
+      "slots_used": ["chosen_action", "mixed_verdict", "mixed_explanation"],
+      "extra_phrase_sets": {
+        "mixed_verdict": {"values": ["This spot was mixed — your choice was one of the good ones.", "This spot was not mixed; the better choice was {best_action}."]},
+        "mixed_explanation": {"values": ["More than one action is good here on purpose; either counts as a hit.", "Only the best action was correct here; the other choices were worse."]}
+      },
+      "text": "You chose {chosen_action}. {mixed_verdict}\n\n{mixed_explanation}\n\nWhen a spot is mixed, more than one choice is good. When it is not mixed, only the best choice is."
+    }
+  },
+  "validation": {
+    "check_all_slots_defined": true,
+    "check_no_unlisted_numeric_slots": true,
+    "check_phrase_sets_enumerated": true,
+    "check_teach_card_never_hidden": true
+  }
+}
