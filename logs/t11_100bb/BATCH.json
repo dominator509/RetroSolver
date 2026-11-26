@@ -1,0 +1,17 @@
+{
+ "batch_id": "t11-100bb-altboards-b9-texassolver-evs",
+ "bytes_compressed": 16018864,
+ "bytes_files": 73918522,
+ "bytes_tar": 76933120,
+ "compression": "xz preset 6",
+ "created_at_utc": "2026-11-26T21:12:09Z",
+ "destination": null,
+ "destination_verified": false,
+ "excluded_spots": [],
+ "files": 240,
+ "manifest_sha256": "43282210f94e79b5dae5a2e82df2dff5d0fbbe285ada96ce300eca110d601be1",
+ "mean_bytes_compressed_per_spot": 66745.3,
+ "mean_bytes_files_per_spot": 307993.8,
+ "provenance_note": "Coverage matrix v2 tier 11 (board 9 of each texture class with remaining boards, 100bb), solved on PC with the patched TexasSolver v0.2.0 build (EV export patch). 10 of the 240 spots were solved by an earlier statically linked build of the same patched source and 230 by a rebuild of that source without static linking; one spot re-solved with both builds gave a byte-identical output file, and all spot inputs are byte-identical to those regenerated from the committed spot list. 240 spots solved with real solver exit code 0 and passed extract_pack_v2 plus validator_v2 (ACCEPT, 0 failures, 0 warnings). An independent sweep of every EV value against |EV| <= pot + effective stack found no failing spots. Packs remain single_source until a cross-check solve.",
+ "ratio_files_over_compressed": 4.614
+}
