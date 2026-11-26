@@ -63,9 +63,13 @@ Slots: `{chosen_action}`, `{best_action}`, `{grade_reason}`, `{hand_strength_phr
 `visual: pot_stack` `gate: none`
 > The question is simple: is what I must pay small next to what I could win? If the pot is large and the price is small, staying is often worth it. If the pot is small and the price is large, it usually is not.
 
+### Screen 2.3b — The price is only half
+`visual: pot_stack` `gate: none`
+> A good price is a reason to consider calling, not a reason to call. A small price on a hand that rarely ends up best is still a losing call. Two questions, in order: is the price small next to the pot, and does my hand win often enough for that price? Only when both are yes is calling right. A big pot can make a bad call look cheap.
+
 ### Screen 2.4 — Sometimes the price is the same
 `visual: pot_stack` `gate: recognize`
-> Two hands, two different prices, both offered the same pot. Tap the one where paying is the better deal for the money at stake. There is no formula to memorise — just look at price next to pot.
+> Two hands, two different prices, both offered the same pot. Tap the one where paying is the better deal for the money at stake. There is no formula to memorise — just look at price next to pot, then ask whether that hand finishes best often enough.
 
 ### Screen 2.5 — Practice
 `visual: spot_frame` `gate: solve`
@@ -117,13 +121,13 @@ Slots: `{cost_to_call}`, `{pot_size}` — **numeric, engine-supplied from the ve
 **Answer key:** No. Both good actions count as correct; mixing is not guessing.
 
 ### Teach-card template — Lesson 3
-> You chose **{chosen_action}**. {mixed_verdict}.
+> You chose **{chosen_action}**. {mixed_headline}
 >
 > {mixed_explanation}
 >
-> Remember: when a spot is mixed, more than one choice is good. When it is not mixed, only the best choice is.
+> Remember: when a spot is mixed, more than one choice is good. When it is not mixed, only the best choice is. In this spot the best action was **{best_action}**.
 
-Slots: `{chosen_action}`, `{best_action}`, `{mixed_verdict}`, `{mixed_explanation}` from the fixed phrase set. `{mixed_verdict}` is one of two fixed sentences: "This spot was mixed — your choice was one of the good ones." or "This spot was not mixed; the better choice was {best_action}."
+Slots: `{chosen_action}`, `{best_action}`, `{mixed_headline}`, `{mixed_explanation}`. `{mixed_headline}` and `{mixed_explanation}` are four-value phrase sets chosen by grade — mixed accepted, mixed miss, nonmixed miss, hit — so a mixed spot that was missed is never praised and no `{best_action}` is left unresolved inside a phrase.
 
 ---
 

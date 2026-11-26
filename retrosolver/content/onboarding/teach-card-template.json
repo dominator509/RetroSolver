@@ -37,12 +37,33 @@
     },
     "tc.l3": {
       "lesson": "l3",
-      "slots_used": ["chosen_action", "mixed_verdict", "mixed_explanation"],
-      "extra_phrase_sets": {
-        "mixed_verdict": {"values": ["This spot was mixed — your choice was one of the good ones.", "This spot was not mixed; the better choice was {best_action}."]},
-        "mixed_explanation": {"values": ["More than one action is good here on purpose; either counts as a hit.", "Only the best action was correct here; the other choices were worse."]}
+      "slots_used": ["chosen_action", "best_action", "mixed_headline", "mixed_explanation"],
+      "grade_mapping": {
+        "mixed_accepted": "the spot is mixed and the learner picked any accepted action",
+        "mixed_miss": "the spot is mixed and the learner picked an action outside the accepted set",
+        "nonmixed_miss": "the spot is not mixed and the learner picked something other than best_action",
+        "hit": "the spot is not mixed and the learner picked best_action"
       },
-      "text": "You chose {chosen_action}. {mixed_verdict}\n\n{mixed_explanation}\n\nWhen a spot is mixed, more than one choice is good. When it is not mixed, only the best choice is."
+      "extra_phrase_sets": {
+        "mixed_headline": {
+          "values": [
+            "This spot was mixed - your choice was one of the good ones.",
+            "This spot was mixed, but your choice was not one of the good ones.",
+            "This spot was not mixed; the better choice was {best_action}.",
+            "You found the best choice."
+          ]
+        },
+        "mixed_explanation": {
+          "values": [
+            "More than one action is good here on purpose; either counts as a hit.",
+            "More than one action is good here, but not this one. Compare what you chose with the actions that were accepted.",
+            "Only the best action was correct here; the other choices were worse.",
+            "Only the best action was correct here, and you chose it."
+          ]
+        }
+      },
+      "resolution_rule": "The engine picks the phrase index by grade: mixed_accepted -> 0, mixed_miss -> 1, nonmixed_miss -> 2, hit -> 3. Every {slot} in the chosen string must be substituted before the card is shown; the card is not shippable with an unresolved placeholder.",
+      "text": "You chose {chosen_action}. {mixed_headline}\n\n{mixed_explanation}\n\nWhen a spot is mixed, more than one choice is good. When it is not mixed, only the best choice is. In this spot the best action was {best_action}."
     }
   },
   "validation": {

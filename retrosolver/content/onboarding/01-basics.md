@@ -71,7 +71,7 @@ Told as the story of a single hand, start to finish. Terms are introduced on the
 
 ### Screen 2.2 — The deal
 `visual: deal_cards`
-> Every player gets two private cards. The player whose turn it is to put in the blind acts first, before the shared cards appear. This first round is the **preflop**.
+> Every player gets two private cards. Before the shared cards appear, a round of betting opens. Who acts first depends on the table: with three or more players, the blind to the left of the button acts first; heads-up, the button acts first preflop. This first round is the **preflop**.
 
 ### Screen 2.3 — The flop
 `visual: flop_cards`

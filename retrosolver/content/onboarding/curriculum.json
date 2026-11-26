@@ -80,8 +80,8 @@
         "id": "r3",
         "gate": "recognize",
         "scored": false,
-        "question": "Given the seat marker and the button, tap the seat that acts last.",
-        "answer_key": "seat immediately clockwise of the button"
+        "question": "After the shared cards come, the player on the button is still in the hand. Tap the seat that acts last.",
+        "answer_key": "the button"
       }
     },
     {
@@ -135,8 +135,9 @@
         {"id": "l2.1", "beat": "The money in the middle is the pot. It belongs to nobody until the hand ends. It is the prize.", "visual": "pot_stack", "gate": "none"},
         {"id": "l2.2", "beat": "When there is a bet to you, staying in costs money. Fold and you keep that money but give up the pot. Call and you pay to stay.", "visual": "chips_to_center", "gate": "none"},
         {"id": "l2.3", "beat": "Ask: is what I must pay small next to what I could win? A large pot and a small price make staying worth it; a small pot and a large price usually do not.", "visual": "pot_stack", "gate": "none"},
-        {"id": "l2.4", "beat": "Two hands, two prices, the same pot. Tap the one where paying is the better deal for the money at stake.", "visual": "pot_stack", "gate": "recognize"},
-        {"id": "l2.5", "beat": "A real spot. The engine knows the pot and the price; you decide. The teach card shows the numbers it used.", "visual": "spot_frame", "gate": "solve"}
+        {"id": "l2.4", "beat": "A good price is a reason to consider calling, not a reason to call. Ask two things in order: is the price small next to the pot, and does my hand win often enough for that price?", "visual": "pot_stack", "gate": "none"},
+        {"id": "l2.5", "beat": "Two hands, two prices, the same pot. Tap the one where paying is the better deal for the money at stake, then check whether that hand finishes best often enough.", "visual": "pot_stack", "gate": "recognize"},
+        {"id": "l2.6", "beat": "A real spot. The engine knows the pot and the price; you decide. The teach card shows the numbers it used.", "visual": "spot_frame", "gate": "solve"}
       ],
       "recall": {
         "id": "lr2",
