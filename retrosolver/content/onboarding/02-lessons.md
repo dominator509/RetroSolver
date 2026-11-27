@@ -76,8 +76,8 @@ Slots: `{chosen_action}`, `{best_action}`, `{grade_reason}`, `{hand_strength_phr
 > A real spot. The engine knows the pot and the price; you decide. The teach card will show the numbers it used, never ones you invented.
 
 ### Recall 2
-**Question:** In one sentence, what are you comparing when you decide whether to call a bet?
-**Answer key:** what it costs you to stay against what is already in the pot (what you could win).
+**Question:** In one sentence, what question do you answer when you decide whether to call a bet?
+**Answer key:** will this hand win often enough for this price? — the price set against the pot is one half; whether the hand wins often enough is the other, and both must be yes.
 
 ### Teach-card template — Lesson 2
 > You chose **{chosen_action}**. The better choice was **{best_action}**.
@@ -86,7 +86,7 @@ Slots: `{chosen_action}`, `{best_action}`, `{grade_reason}`, `{hand_strength_phr
 >
 > {pot_odds_verdict_phrase}
 >
-> You do not need a formula. Ask: is this price small next to this pot?
+> You do not need a formula. Ask: will this hand win often enough for this price?
 
 Slots: `{cost_to_call}`, `{pot_size}` — **numeric, engine-supplied from the verified spot only.** `{chosen_action}`, `{best_action}`, `{pot_odds_verdict_phrase}` from the fixed phrase set. This is the one lesson whose teach card may show numbers, and every one of them comes from the spot record, never from this content file.
 

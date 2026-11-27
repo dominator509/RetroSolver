@@ -31,9 +31,9 @@
       "slots_used": ["chosen_action", "best_action", "cost_to_call", "pot_size", "pot_odds_verdict_phrase"],
       "numeric_slot_note": "cost_to_call and pot_size are registered as defined numeric slots here; they are the only numeric slots in the whole file and appear only in tc.l2.",
       "extra_phrase_sets": {
-        "pot_odds_verdict_phrase": {"values": ["That price was small next to the pot, so staying had a strong case.", "That price was large next to the pot, so folding had a strong case.", "That price was close to the pot, so the better choice was the one with the smaller downside."]}
+        "pot_odds_verdict_phrase": {"values": ["That price was small next to the pot, so this hand wins often enough for that price.", "That price was large next to the pot, so this hand does not win often enough for that price.", "That price was close to the pot, so whether this hand wins often enough for that price was the deciding question."]}
       },
-      "text": "You chose {chosen_action}. The better choice was {best_action}.\n\nIt would have cost {cost_to_call} to stay, and the pot held {pot_size} before your decision. So you were paying {cost_to_call} to try to win {pot_size}.\n\n{pot_odds_verdict_phrase}\n\nYou do not need a formula. Ask: is this price small next to this pot?"
+      "text": "You chose {chosen_action}. The better choice was {best_action}.\n\nIt would have cost {cost_to_call} to stay, and the pot held {pot_size} before your decision. So you were paying {cost_to_call} to try to win {pot_size}.\n\n{pot_odds_verdict_phrase}\n\nYou do not need a formula. Ask: will this hand win often enough for this price?"
     },
     "tc.l3": {
       "lesson": "l3",
@@ -49,7 +49,7 @@
           "values": [
             "This spot was mixed - your choice was one of the good ones.",
             "This spot was mixed, but your choice was not one of the good ones.",
-            "This spot was not mixed; the better choice was {best_action}.",
+            "This spot was not mixed; the better choice was a different action.",
             "You found the best choice."
           ]
         },
