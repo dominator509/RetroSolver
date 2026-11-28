@@ -1,0 +1,182 @@
+{
+  "schema": "retrosolver.onboarding_curriculum.v1",
+  "note": "Text/structure only. No frequencies, EVs, bet sizes, or invented spots. Visual values are skin slot NAMES, not asset paths. gate: none|recognize|solve. Only solve screens are engine-graded.",
+  "audience": "adult who has never played Texas hold'em",
+  "voice": {
+    "person": "second",
+    "tense": "present",
+    "max_ideas_per_screen": 1,
+    "term_rule": "introduce a term on the screen where it is first needed, never as a glossary dump"
+  },
+  "units": [
+    {
+      "id": "u0",
+      "title": "The table",
+      "graded": false,
+      "source": "01-basics.md#unit-0",
+      "screens": [
+        {"id": "u0.1", "beat": "You sit at a table with other players. Each of you gets two cards only you can see. Five more cards come out in the middle where everyone can see them. You build the best five-card hand from all seven.", "visual": "table_overview", "gate": "none"},
+        {"id": "u0.2", "beat": "The two cards in front of you are yours alone. Nobody else knows what they are.", "visual": "hole_cards", "gate": "none"},
+        {"id": "u0.3", "beat": "The cards in the middle belong to everyone. Use none, one, or both of your own cards with them, whichever makes the best five.", "visual": "community_cards", "gate": "none"},
+        {"id": "u0.4", "beat": "If players stay to the end, the cards are shown and the best five-card hand takes the pot.", "visual": "showdown_reveal", "gate": "none"}
+      ],
+      "recall": null
+    },
+    {
+      "id": "u1",
+      "title": "Hand rankings",
+      "graded": false,
+      "source": "01-basics.md#unit-1",
+      "screens": [
+        {"id": "u1.1", "beat": "Five cards in a row, all the same suit: a straight flush. Almost cannot be beaten.", "visual": "hand_straight_flush", "gate": "none"},
+        {"id": "u1.2", "beat": "Four cards of the same rank: four of a kind. Beats everything except a straight flush.", "visual": "hand_quads", "gate": "none"},
+        {"id": "u1.3", "beat": "Three of one rank plus two of another: a full house. Stronger than a flush, weaker than four of a kind.", "visual": "hand_full_house", "gate": "none"},
+        {"id": "u1.4", "beat": "Five cards of the same suit, not in order: a flush.", "visual": "hand_flush", "gate": "none"},
+        {"id": "u1.5", "beat": "Five cards in a row, any suits: a straight. An ace can be high or low, but the row cannot wrap around.", "visual": "hand_straight", "gate": "none"},
+        {"id": "u1.6", "beat": "Below straights come three of a kind, then two pair, then one pair. Each a small step down.", "visual": "hand_trips_pair", "gate": "none"},
+        {"id": "u1.7", "beat": "No pair, no row, no suit-match: high card. The most common hand, and it often loses.", "visual": "hand_high_card", "gate": "none"}
+      ],
+      "recall": {
+        "id": "r1",
+        "gate": "recognize",
+        "scored": false,
+        "question": "Order these five hands strongest to weakest.",
+        "answer_key": ["straight_flush", "four_of_a_kind", "full_house", "flush", "straight"]
+      }
+    },
+    {
+      "id": "u2",
+      "title": "The flow of one hand",
+      "graded": false,
+      "source": "01-basics.md#unit-2",
+      "screens": [
+        {"id": "u2.1", "beat": "Before any cards, two players must put money in. These forced bets are the blinds.", "visual": "blinds_chips", "gate": "none"},
+        {"id": "u2.2", "beat": "Every player gets two private cards. A round of betting follows. This first round is the preflop.", "visual": "deal_cards", "gate": "none"},
+        {"id": "u2.3", "beat": "Three shared cards come out at once: the flop. A round of betting follows.", "visual": "flop_cards", "gate": "none"},
+        {"id": "u2.4", "beat": "One more shared card is the turn, then a final one is the river. A betting round follows each.", "visual": "turn_river", "gate": "none"},
+        {"id": "u2.5", "beat": "On your turn you may fold, call, or raise. Every choice costs something, including doing nothing.", "visual": "action_ring", "gate": "none"},
+        {"id": "u2.6", "beat": "If more than one player is still in after the last bet, the cards are shown and the best hand takes the pot.", "visual": "showdown_reveal", "gate": "none"}
+      ],
+      "recall": {
+        "id": "r2",
+        "gate": "recognize",
+        "scored": false,
+        "question": "Order the stages of one hand.",
+        "answer_key": ["blinds", "deal", "flop", "turn", "river", "showdown"]
+      }
+    },
+    {
+      "id": "u3",
+      "title": "Positions",
+      "graded": false,
+      "source": "01-basics.md#unit-3",
+      "screens": [
+        {"id": "u3.1", "beat": "Players act in a fixed order around the table. Your seat decides when you act every round.", "visual": "seat_ring", "gate": "none"},
+        {"id": "u3.2", "beat": "Players who act first are early. Players who act last are late. Late is easier: you have already seen what the others did.", "visual": "seat_ring", "gate": "none"},
+        {"id": "u3.3", "beat": "A marker called the button moves one seat each hand. The button acts last after the shared cards come.", "visual": "button_marker", "gate": "none"},
+        {"id": "u3.4", "beat": "Acting after your opponent is in position. Acting before them is out of position, where you commit without seeing their choice.", "visual": "seat_ring", "gate": "none"}
+      ],
+      "recall": {
+        "id": "r3",
+        "gate": "recognize",
+        "scored": false,
+        "question": "After the shared cards come, the player on the button is still in the hand. Tap the seat that acts last.",
+        "answer_key": "the button"
+      }
+    },
+    {
+      "id": "u4",
+      "title": "What a spot is",
+      "graded": false,
+      "source": "01-basics.md#unit-4",
+      "screens": [
+        {"id": "u4.1", "beat": "A spot is one decision point: your cards, the shared cards, the money already in, and what has happened so far.", "visual": "spot_frame", "gate": "none"},
+        {"id": "u4.2", "beat": "The same situation comes up again with different cards. Practice teaches the shape of a situation, not one lucky deal.", "visual": "spot_frame", "gate": "none"},
+        {"id": "u4.3", "beat": "Your choice is graded against the best choice for that spot. A good choice may still lose the hand; grading is about the decision.", "visual": "grade_meter", "gate": "none"},
+        {"id": "u4.4", "beat": "After a miss, a teach card explains why the better choice was better. The lesson always appears.", "visual": "teach_card", "gate": "none"}
+      ],
+      "recall": {
+        "id": "r4",
+        "gate": "recognize",
+        "scored": false,
+        "question": "Tap each part of the shown spot: your cards, the shared cards, the pot, the decision.",
+        "answer_key": "four-part identification"
+      }
+    },
+    {
+      "id": "l1",
+      "title": "Lesson 1: value vs bluff",
+      "graded": true,
+      "source": "02-lessons.md#lesson-1",
+      "goal": "State the two reasons to put money in: to be called by a worse hand (value) or to make a better hand fold (bluff).",
+      "screens": [
+        {"id": "l1.1", "beat": "People put money in for two reasons. One: you think your hand is best and want a worse hand to pay you. Two: you think you are not best and want a better hand to fold.", "visual": "action_ring", "gate": "none"},
+        {"id": "l1.2", "beat": "Betting hoping a worse hand calls is a value bet. Being called is the point.", "visual": "chips_to_center", "gate": "none"},
+        {"id": "l1.3", "beat": "Betting hoping a better hand gives up is a bluff. Being called is usually bad news.", "visual": "folded_cards", "gate": "none"},
+        {"id": "l1.4", "beat": "The same size bet can be either. What makes it value or a bluff is what you want to happen next: a call, or a fold.", "visual": "action_ring", "gate": "recognize"},
+        {"id": "l1.5", "beat": "Here is a real spot. Decide what to do; the teach card follows the grade.", "visual": "spot_frame", "gate": "solve"}
+      ],
+      "recall": {
+        "id": "lr1",
+        "gate": "none",
+        "scored": false,
+        "question": "Name the two reasons to put money into a pot.",
+        "answer_key": "to be called by a worse hand (value); to make a better hand fold (bluff)"
+      },
+      "teach_card_template_id": "tc.l1"
+    },
+    {
+      "id": "l2",
+      "title": "Lesson 2: pot odds in plain words",
+      "graded": true,
+      "source": "02-lessons.md#lesson-2",
+      "goal": "Explain that calling costs something, and that you compare that price to what is already in the pot.",
+      "screens": [
+        {"id": "l2.1", "beat": "The money in the middle is the pot. It belongs to nobody until the hand ends. It is the prize.", "visual": "pot_stack", "gate": "none"},
+        {"id": "l2.2", "beat": "When there is a bet to you, staying in costs money. Fold and you keep that money but give up the pot. Call and you pay to stay.", "visual": "chips_to_center", "gate": "none"},
+        {"id": "l2.3", "beat": "Ask two things: is what I must pay small next to what I could win, and does my hand win often enough for that price? A good price on a hand that rarely wins is still a losing call.", "visual": "pot_stack", "gate": "none"},
+        {"id": "l2.4", "beat": "A good price is a reason to consider calling, not a reason to call. Ask two things in order: is the price small next to the pot, and does my hand win often enough for that price?", "visual": "pot_stack", "gate": "none"},
+        {"id": "l2.5", "beat": "Two hands, two prices, the same pot. Tap the one where paying is the better deal for the money at stake, then check whether that hand finishes best often enough.", "visual": "pot_stack", "gate": "recognize"},
+        {"id": "l2.6", "beat": "A real spot. The engine knows the pot and the price; you decide. The teach card shows the numbers it used.", "visual": "spot_frame", "gate": "solve"}
+      ],
+      "recall": {
+        "id": "lr2",
+        "gate": "none",
+        "scored": false,
+        "question": "In one sentence, what question do you answer when you decide whether to call a bet?",
+        "answer_key": "will this hand win often enough for this price"
+      },
+      "teach_card_template_id": "tc.l2",
+      "numeric_slots_allowed_from_spot_record": ["cost_to_call", "pot_size"]
+    },
+    {
+      "id": "l3",
+      "title": "Lesson 3: why mixed plays exist",
+      "graded": true,
+      "source": "02-lessons.md#lesson-3",
+      "goal": "Accept that two actions can both be correct in one spot, and that a mixed spot is not a rule to copy or a mistake.",
+      "screens": [
+        {"id": "l3.1", "beat": "In some spots, two different choices are both good. Genuinely fine, not a tie you must guess.", "visual": "split_choice", "gate": "none"},
+        {"id": "l3.2", "beat": "Always doing the same thing in the same spot makes you readable. Mixing keeps your play from being obvious.", "visual": "split_choice", "gate": "none"},
+        {"id": "l3.3", "beat": "Mixing is not a coin flip. The situation supports more than one good choice, and the bad choices stay bad.", "visual": "split_choice", "gate": "none"},
+        {"id": "l3.4", "beat": "When a spot is genuinely mixed, either good choice counts as a hit. You are not punished for not picking the one listed first.", "visual": "grade_meter", "gate": "recognize"},
+        {"id": "l3.5", "beat": "A real spot, possibly mixed. Decide; if it is mixed, both good choices are accepted and the teach card says so.", "visual": "spot_frame", "gate": "solve"}
+      ],
+      "recall": {
+        "id": "lr3",
+        "gate": "none",
+        "scored": false,
+        "question": "If a spot is mixed, are you wrong for choosing the other good action?",
+        "answer_key": "No. Both good actions count as correct; mixing is not guessing."
+      },
+      "teach_card_template_id": "tc.l3"
+    }
+  ],
+  "order": ["u0", "u1", "u2", "u3", "u4", "l1", "l2", "l3"],
+  "practice_begins_at": "l1",
+  "through_line": [
+    "People bet to be called (value) or to make others fold (bluff).",
+    "Calling costs something; compare the price to the pot.",
+    "Sometimes more than one choice is good, and that is on purpose."
+  ]
+}
